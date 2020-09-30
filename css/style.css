@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap');
+
+.navigation ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: red;
+	text-transform: uppercase;
+	text-align: center;
+}
+.navigation ul li{
+	color: white;
+	position: relative;
+	display: inline-block;
+}
+.navigation li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.navigation li a:hover:not(.active) {
+	background-color: #111;
+  }
+
+/* GRID */
+.grid-container {
+	display: grid;
+	 grid-template-rows: repeat(2, 300px);
+	grid:
+	'hero-image hero-image hero-image hero-image'
+	'main-1 main-2 main-3 main-4'
+	'ingredients-1 ingredients-2 ingredients-2 ingredients-3'
+	'serve serve serve serve'
+	'footer footer footer footer';
+	grid-gap: 10px;
+	background-color: #EDF1F5;
+	font: 400 normal 1.0em/1 'Roboto', helvetica, arial, sans-serif;
+}
+
+.grid-container h2{
+	align-items: center;
+	justify-content: center;
+	display: grid;
+}
+.grid-container p{
+	align-items: center;
+	justify-content: center;
+	display: grid;
+}
+.hero-image {
+	grid-area: hero-image;
+	/* background-color: cyan; */
+}
+.hero-image p{
+	align-items: center;
+	justify-content: center;
+	display: grid;
+}
+.picture{
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  max-width: 50%;
+  height: auto;
+}
+.hero-image h1{
+	align-items: center;
+	justify-content: center;
+	display: grid;
+}
+.grid-container ul{
+	align-items: center;
+	justify-content: center;
+	display: grid;
+}
+
+.main-1{
+	grid-area: main-1;
+	background-color: red;
+	display: grid;
+	
+}
+
+
+.main-2{
+	grid-area: main-2;
+	background-color: red;
+	display: grid;
+}
+
+.main-3{
+	grid-area: main-3;
+	background-color: red;
+	display: grid;
+}
+
+.main-4{
+	grid-area: main-4;
+	background-color: red;
+	display: grid;
+}
+
+.ingredients-1{
+	grid-area: ingredients-1;
+	display: grid;
+	background-color: white;
+}
+.ingredients-1 h2{
+	align-items: center;
+	justify-content: center;
+	display: grid;
+}
+
+.instructions{
+	grid-area: ingredients-2;
+	display: grid;
+	background-color: white;
+}
+.instructions h1{
+	align-items: center;
+	justify-content: center;
+	display: grid;
+}
+
+.tips{
+	grid-area: ingredients-3;
+	display: grid;
+	background-color: white;
+}
+
+.tips h3{
+	align-items: center;
+	justify-content: center;
+	display: grid;
+}
+
+.serve{
+	grid-area: serve;
+	display: grid;
+	
+}
+.serve h4{
+	align-items: center;
+	justify-content: center;
+	display: grid;
+}
+.chicken{
+	max-width: 50%;
+	height: auto;
+	display: grid;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer{
+	grid-area: footer;
+	display: grid;
+	background-color: red;
+}
+
+.footer p{
+	align-items: center;
+	justify-content: center;
+	display: grid;
+
+}
